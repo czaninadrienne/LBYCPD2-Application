@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "297468844558",
+    "project_id": "lbycpd2-kawani",
+    "storage_bucket": "lbycpd2-kawani.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297468844558:android:6126e0d6a09b04c515fa5f",
+        "android_client_info": {
+          "package_name": "com.app.Kawani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297468844558-036a1laevk4k52k7h61jnpgdkivscdn9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.Kawani",
+            "certificate_hash": "dc4908338164aae39b9d462af14af1d0b6504c62"
+          }
+        },
+        {
+          "client_id": "297468844558-do0nvtclgnlln2pgs86nmhtspmpj77mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsTftou_jWcJYoTYZqlTyU5lutUuimIcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297468844558-do0nvtclgnlln2pgs86nmhtspmpj77mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
