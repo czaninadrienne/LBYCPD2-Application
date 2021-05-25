@@ -4,20 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_bg"
     android:layout_gravity="center"
+    android:background="@drawable/main_bg"
     tools:context=".StartUp">
 
     <Button
         android:id="@+id/text"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:background="@drawable/round_button"
+        android:backgroundTint="#EDB183"
+        android:fontFamily="@font/vidaloka"
+        android:text="kawani."
         android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="290dp"
+        android:textColor="#3A2E39"
+        android:textSize="45sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -30,11 +33,9 @@
         android:text="k"
         android:textColor="#3A2E39"
         android:textSize="288sp"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="190dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

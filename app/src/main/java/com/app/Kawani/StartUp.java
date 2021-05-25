@@ -20,7 +20,9 @@ public class StartUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(view);
         button = findViewById(R.id.text);
-        button.setText("k");
+        button.setText("kawani.");
+        button.setTextColor(0xE4CCBA);
+        button.setBackgroundColor(0xEDB183);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
