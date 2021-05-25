@@ -1,5 +1,6 @@
 package com.app.Kawani;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.camera.core.Camera;
@@ -37,7 +38,7 @@ public class ReadQR extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_read_qr);
 
         previewView = findViewById(R.id.activity_ReadQR_previewView);
 
@@ -89,9 +90,10 @@ public class ReadQR extends AppCompatActivity {
             }
         }, ContextCompat.getMainExecutor(this));
     }
+    
 
     private void bindCameraPreview(@NonNull ProcessCameraProvider cameraProvider) {
-        previewView.setPreferredImplementationMode(PreviewView.ImplementationMode.SURFACE_VIEW);
+        previewView.setImplementationMode(PreviewView.ImplementationMode.PERFORMANCE);
 
         Preview preview = new Preview.Builder()
                 .build();
@@ -100,7 +102,7 @@ public class ReadQR extends AppCompatActivity {
                 .requireLensFacing(CameraSelector.LENS_FACING_BACK)
                 .build();
 
-        preview.setSurfaceProvider(previewView.createSurfaceProvider());
+        preview.setSurfaceProvider(previewView.getSurfaceProvider());
 
         ImageAnalysis imageAnalysis =
                 new ImageAnalysis.Builder()
@@ -123,4 +125,5 @@ public class ReadQR extends AppCompatActivity {
 
         Camera camera = cameraProvider.bindToLifecycle((LifecycleOwner)this, cameraSelector, imageAnalysis, preview);
     }
+
 }
