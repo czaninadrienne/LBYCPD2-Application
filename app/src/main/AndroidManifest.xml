@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kawani">
-        <activity android:name=".CreateQR"></activity>
+        <activity android:name=".CreateQR"/>
         <activity android:name=".ReadQR" />
         <activity android:name=".MainActivity">
             <intent-filter>
