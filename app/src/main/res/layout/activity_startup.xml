@@ -13,8 +13,6 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:background="@drawable/round_button"
-        android:backgroundTint="#EDB183"
-        android:fontFamily="@font/vidaloka"
         tools:layout_editor_absoluteX="80dp"
         tools:layout_editor_absoluteY="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
