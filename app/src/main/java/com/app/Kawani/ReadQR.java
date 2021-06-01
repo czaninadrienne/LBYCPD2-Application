@@ -47,7 +47,8 @@ public class ReadQR extends AppCompatActivity {
         qrCodeFoundButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), qrCode, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), qrCode, Toast.LENGTH_SHORT).show();
+                parseQRData(qrCode);
                 Log.i(MainActivity.class.getSimpleName(), "QR Code Found: " + qrCode);
             }
         });
@@ -124,6 +125,22 @@ public class ReadQR extends AppCompatActivity {
         }));
 
         Camera camera = cameraProvider.bindToLifecycle((LifecycleOwner)this, cameraSelector, imageAnalysis, preview);
+    }
+
+    private String[] parseQRData(String qr) {
+        String[] parsed = qr.split("[,]",0);
+        String toastData;
+        String[] ret = {};
+        if(parsed.length==3){
+            toastData = String.format("First Name: %s\nSurname: %s\nID Number: %s", parsed[0], parsed[1], parsed[2]);
+            ret = parsed;
+        }
+        else {
+            toastData = "Invalid Data";
+            ret[0] = "INV";
+        }
+        Toast.makeText(getApplicationContext(), toastData, Toast.LENGTH_LONG).show();
+        return ret;
     }
 
 }
