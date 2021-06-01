@@ -58,5 +58,6 @@ dependencies {
     // CameraX View class
     implementation "androidx.camera:camera-view:1.0.0-alpha24"
 
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
 }
 
